@@ -1,73 +1,68 @@
 {
   "store.home": {
+    "blocks": ["search-result-layout.customQuery#home"]
+  },
+  "search-result-layout.customQuery#home": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 10
+      }
+    },
     "blocks": [
-      "rich-text",
-      // "info-card#button-right",
-      // "info-card#button-left",
-      "info-card#clearance",
-      "info-card#vintage"
+      "search-result-layout.desktop#home"
+      // "search-result-layout.mobile#home",
+      // "search-not-found-layout"
     ]
   },
-
-  "info-card#clearance": {
+  "search-result-layout.desktop#home": {
+    "children": [
+      // "flex-layout.row#searchbread",
+      // "flex-layout.row#searchtitle",
+      // "flex-layout.row#result",
+      "search-content#home"
+    ],
     "props": {
-      "id": "info-card-clearance",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "textAlignment": "center"
+      "preventRouteChange": true,
+      "pagination": "show-more",
+      "defaultGalleryLayout": "grid"
     }
   },
-
-  "info-card#vintage": {
-    "props": {
-      "id": "info-card-vintage",
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
-      "headline": "Vintage",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "textAlignment": "center",
-      "blockClass": "vintage"
-    }
+  "search-content#home": {
+    "blocks": ["gallery#home", "not-found"]
   },
 
-  "rich-text": {
+  "gallery#home": {
     "props": {
-      "text": "**Olá Hiring Coder**",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-2"
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 2,
+            "desktop": 2,
+            "tablet": 1,
+            "phone": 1
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "ListSummary": "product-summary.shelf#home",
+      "GridSummary": "product-summary.shelf#home"
     }
+  },
+  "product-summary.shelf#home": {
+    "children": [
+      "product-summary-name",
+      "product-summary-image",
+      "product-summary-price",
+      "product-summary-sku-selector",
+      "product-summary-buy-button"
+    ]
   }
-
-  // "info-card#button-right": {
-  //   "props": {
-  //     "isFullModeStyle": false,
-  //     "textPosition": "right",
-  //     "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
-  //     "headline": "Vintage Pink",
-  //     "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
-  //     "callToActionMode": "button",
-  //     "callToActionText": "Explore",
-  //     "callToActionUrl": "/sale/d",
-  //     "textAlignment": "center"
-  //   }
-  // },
-  // "info-card#button-left": {
-  //   "props": {
-  //     "isFullModeStyle": false,
-  //     "textPosition": "left",
-  //     "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-cinza-min.png",
-  //     "headline": "Shining chrome",
-  //     "subhead": "Give your kitchen a cool style adding warm metallic finishes.<br>Available until January 2020.",
-  //     "callToActionMode": "link",
-  //     "callToActionText": "Go to collection",
-  //     "textAlignment": "center"
-  //   }
-  // }
 }
