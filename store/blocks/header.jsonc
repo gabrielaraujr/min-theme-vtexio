@@ -6,14 +6,10 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
-    "children": [
-      "sticky-layout#desktop"
-    ]
+    "children": ["sticky-layout#desktop"]
   },
   "sticky-layout#desktop": {
-    "props": {
-      "blockClass": "sticky-header"
-    },
+    "props": { "blockClass": "sticky-header" },
     "children": ["flex-layout.row#desktop"]
   },
   "flex-layout.row#desktop": {
@@ -22,58 +18,72 @@
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "header-layout"
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
-      "login",
+      // "locale-switcher",
+      // "flex-layout.col#spacer",
+      // "login",
       "minicart.v2"
     ]
   },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
-  },
+  /* "flex-layout.col#spacer": {
+               "props": {
+                 "width": "grow"
+               }
+             }, */
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo"]
+    "children": ["logo#desktop"]
   },
-  "logo": {
+  "logo#desktop": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
+      "url": "https://vtex.com/wp-content/themes/VTEXTheme/v2/images/base/vtex.svg",
       "width": "80"
     }
   },
+
   "header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
   },
   "sticky-layout#mobile": {
+    "props": { "blockClass": "sticky-header" },
     "children": ["flex-layout.row#mobile"]
   },
   "flex-layout.row#mobile": {
-    "children": [
-      "drawer",
-      "logo",
-      "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
-    ],
     "props": {
-      "blockClass": "main-header-mobile",
+      // "blockClass": "main-header-mobile",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
-    }
+    },
+    "children": [
+      "logo#mobile",
+      "search-bar",
+      // "flex-layout.col#spacer",
+      // "login",
+      "minicart.v2"
+    ]
   },
-  "drawer": {
-    "children": []
+  "logo#mobile": {
+    "props": {
+      "title": "Logo mobile",
+      "href": "/",
+      "url": "https://www.ciashop.com.br/images/logo.svg",
+      "width": "40",
+      "blockClass": "logo-mobile"
+    }
   }
+  /* "drawer": {
+          "children": []
+        } */
 }
