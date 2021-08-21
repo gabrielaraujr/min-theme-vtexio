@@ -35,3 +35,24 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
+.searchBarContainer {
+  min-width: none;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-left-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+}
+
+@media (min-width: 900px) {
+  .searchBarContainer {
+    min-width: 35rem;
+  }
+}
+
+/* .searchBarInnerContainer {
+} */

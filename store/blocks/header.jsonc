@@ -64,7 +64,8 @@
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "header-layout"
     },
     "children": [
       "logo#mobile",
@@ -82,7 +83,18 @@
       "width": "40",
       "blockClass": "logo-mobile"
     }
+  },
+  "search-bar": {
+    "props": {
+      // "autocompleteFullWidth": true,
+      // "compactMode": true
+      // "autocompleteAlignment": "center"
+      // "compactMode": true
+      "placeholder": "BUSCAR",
+      "displayMode": "clear-button"
+    }
   }
+
   /* "drawer": {
           "children": []
         } */
