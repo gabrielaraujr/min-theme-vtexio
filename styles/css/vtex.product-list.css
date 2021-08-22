@@ -1,0 +1,10 @@
+.productPrice {
+  color: #59ff00;
+}
+.removeButton {
+  transition: all 0.25s ease-in-out;
+}
+
+.removeButton:hover {
+  color: red !important;
+}

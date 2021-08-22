@@ -1,3 +1,7 @@
 .galleryItem {
   flex-basis: 40% !important;
 }
+
+.container--layout {
+  margin-top: 2rem;
+}

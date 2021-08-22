@@ -1,6 +1,7 @@
 {
   "store.custom#product-items": {
     "blocks": [
+      "tab-layout#home",
       "list-context.image-list#home",
       "search-result-layout.customQuery#home"
     ],
@@ -15,6 +16,51 @@
   },
   "header-layout.mobile#empty": {
     "children": []
+  },
+
+  "tab-layout#home": {
+    "props": {
+      "defaultActiveTabId": "corinthians"
+      // "blockClass": "home"
+    },
+    "children": ["tab-list#home", "tab-content#home"]
+  },
+  "tab-list#home": {
+    "children": ["tab-list.item#promocao", "tab-list.item#corinthians"]
+  },
+  "tab-list.item#promocao": {
+    "props": {
+      "tabId": "promocao",
+      "label": "Promoção",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#corinthians": {
+    "props": {
+      "tabId": "corinthians",
+      "label": "Corinthians"
+    }
+  },
+  "tab-content#home": {
+    "children": ["tab-content.item#promocao", "tab-content.item#corinthians"]
+  },
+  "tab-content.item#promocao": {
+    "children": ["newsletter"],
+    "props": {
+      "tabId": "promocao"
+    }
+  },
+  "tab-content.item#corinthians": {
+    "children": [
+      // "shelf#home",
+      // "info-card#home",
+      // "rich-text#question",
+      // "rich-text#link",
+      "newsletter"
+    ],
+    "props": {
+      "tabId": "corinthians"
+    }
   },
 
   // slider layout
@@ -41,10 +87,9 @@
         "tablet": 1,
         "phone": 1
       },
-      "arrowSize": 18,
+      "arrowSize": 16,
       "infinite": true,
       "fullWidth": false,
-      // "showNavigationArrows": "desktopOnly",
       "blockClass": "carousel"
     }
   },
@@ -80,7 +125,6 @@
   "search-content#home": {
     "blocks": ["gallery#home", "not-found"]
   },
-
   "gallery#home": {
     "props": {
       "layouts": [
@@ -122,6 +166,7 @@
       "thumbnailsOrientation": "horizontal"
     }
   },
+
   "rich-text#pre-launch": {
     "props": {
       "textAlignment": "CENTER",
@@ -138,6 +183,7 @@
       "blockClass": "validation-message"
     }
   },
+
   "flex-layout.row#price": {
     "props": {
       // "preventHorizontalStretch": true,

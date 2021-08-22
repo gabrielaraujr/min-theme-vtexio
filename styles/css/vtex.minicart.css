@@ -9,3 +9,21 @@
 .minicartContainer :global(.vtex-button):hover {
   background-color: rgba(255, 255, 255, 0.08);
 }
+
+.minicartQuantityBadge {
+  color: #000;
+}
+
+.minicartCheckoutButton :global(.vtex-button) {
+  border: 0;
+  background-color: #59ff00;
+  color: #000;
+}
+
+.closeIconButton {
+  color: #fff;
+}
+
+/* .minicartProductListContainer :global(.vtex-flex-layout-0-x-flexRow) .pb6 {
+  border: 1px solid #59ff00;
+} */

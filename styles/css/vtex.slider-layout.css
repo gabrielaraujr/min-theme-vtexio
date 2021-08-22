@@ -8,3 +8,24 @@
   max-width: 800px;
   border-radius: 10px;
 }
+
+.sliderArrows--carousel {
+  color: #fff;
+  bottom: 0;
+  z-index: 3;
+  padding: 0.25rem 1.4rem;
+  border-radius: 4px;
+  transition: all 0.25s ease-in-out;
+}
+
+.sliderArrows--carousel:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.sliderLeftArrow--carousel {
+  left: 20%;
+}
+
+.sliderRightArrow--carousel {
+  right: 20%;
+}
