@@ -65,7 +65,8 @@
 }
 
 .searchIcon,
-.closeIcon {
+.closeIcon,
+.imageElement--svg {
   color: #fff;
 }
 

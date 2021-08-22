@@ -21,8 +21,9 @@
   },
   "image#deal1": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/perfil.png",
-      "maxHeight": "20px"
+      "src": "https://svgshare.com/i/_TV.svg",
+      "maxHeight": "20px",
+      "blockClass": "svg"
     }
   },
   "rich-text#deal1": {
@@ -37,8 +38,9 @@
   },
   "image#deal2": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/trophy.png",
-      "maxHeight": "20px"
+      "src": "https://svgshare.com/i/_SE.svg",
+      "maxHeight": "20px",
+      "blockClass": "svg"
     }
   },
   "rich-text#deal2": {
@@ -53,8 +55,9 @@
   },
   "image#deal3": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/store.png",
-      "maxHeight": "20px"
+      "src": "https://svgshare.com/i/_TW.svg",
+      "maxHeight": "20px",
+      "blockClass": "svg"
     }
   },
   "rich-text#deal3": {
@@ -69,8 +72,9 @@
   },
   "image#deal4": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/whatsapp.png",
-      "maxHeight": "20px"
+      "src": "https://svgshare.com/i/_Rj.svg",
+      "maxHeight": "20px",
+      "blockClass": "svg"
     }
   },
   "rich-text#deal4": {
