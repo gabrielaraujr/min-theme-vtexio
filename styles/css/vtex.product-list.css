@@ -1,6 +1,8 @@
-.productPrice {
+.productPrice,
+.price {
   color: #59ff00;
 }
+
 .removeButton {
   transition: all 0.25s ease-in-out;
 }

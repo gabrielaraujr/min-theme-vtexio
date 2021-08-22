@@ -1,5 +1,40 @@
 {
   "store.home": {
-    "blocks": ["store.custom#product-items"]
+    "blocks": ["list-context.image-list#home", "store.custom#product-items"]
+  },
+
+  // slider layout
+  "list-context.image-list#home": {
+    "props": {
+      "height": 320,
+      "images": [
+        {
+          "image": "https://i.imgur.com/QUDAmAY.gif"
+          // "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://i.imgur.com/15b4h0a.gif"
+          // "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ]
+    },
+    "children": ["slider-layout#home-images"]
+  },
+  "slider-layout#home-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "arrowSize": 16,
+      "infinite": true,
+      "fullWidth": false,
+      "autoPlay": {
+        "timeout": 4000,
+        "stopOnHover": true
+      },
+      "blockClass": "carousel"
+    }
   }
 }
