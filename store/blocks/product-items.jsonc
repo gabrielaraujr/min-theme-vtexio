@@ -30,29 +30,10 @@
       "tab-list.item#promocao",
       "tab-list.item#corinthians",
       "tab-list.item#palmeiras",
-      "tab-list.item#signos"
+      "tab-list.item#signos",
+      "tab-list.item#guerreiros"
     ]
   },
-
-  // "flex-layout.row#list-slider": {
-  //   "props": {
-  //     "itemsPerPage": {
-  //       "desktop": 5,
-  //       "tablet": 4,
-  //       "phone": 3
-  //     },
-  //     "infinite": true,
-  //     "showNavigationArrows": "desktopOnly",
-  //     "showPaginationDots": false,
-  //     "fullWidth": true
-  //   },
-  //   "children": [
-  //     "tab-list.item#promocao",
-  //     "tab-list.item#corinthians",
-  //     "tab-list.item#palmeiras",
-  //     "tab-list.item#signos"
-  //   ]
-  // },
 
   "tab-list.item#promocao": {
     "props": {
@@ -83,6 +64,13 @@
       "blockClass": "tab-item"
     }
   },
+  "tab-list.item#guerreiros": {
+    "props": {
+      "tabId": "guerreiros",
+      "label": "Guerreiros",
+      "blockClass": "tab-item"
+    }
+  },
 
   // tab-contents
   "tab-content#home": {
@@ -91,7 +79,8 @@
       "tab-content.item#promocao",
       "tab-content.item#corinthians",
       "tab-content.item#palmeiras",
-      "tab-content.item#signos"
+      "tab-content.item#signos",
+      "tab-content.item#guerreiros"
     ]
   },
   "tab-content.item#promocao": {
@@ -110,6 +99,10 @@
     "children": ["list-context.product-list#signos"],
     "props": { "tabId": "signos" }
   },
+  "tab-content.item#guerreiros": {
+    "children": ["list-context.product-list#guerreiros"],
+    "props": { "tabId": "guerreiros" }
+  },
 
   // product list and renderes (customization maxItems and category)
   "list-context.product-list#promocao": {
@@ -124,7 +117,8 @@
     "blocks": ["product-summary.shelf#home"],
     "children": ["list-context-renderer#home"],
     "props": {
-      "category": "28/41/42",
+      // "category": "28/41/42",
+      "category": "20/22",
       "maxItems": 8
     }
   },
@@ -132,7 +126,8 @@
     "blocks": ["product-summary.shelf#home"],
     "children": ["list-context-renderer#home"],
     "props": {
-      "category": "28/41/43",
+      // "category": "28/41/43",
+      "category": "20/23",
       "maxItems": 8
     }
   },
@@ -140,7 +135,8 @@
     "blocks": ["product-summary.shelf#home"],
     "children": ["list-context-renderer#home"],
     "props": {
-      "category": "28/41/44",
+      // "category": "28/41/44",
+      "category": "20/21",
       "maxItems": 8
     }
   },
@@ -148,7 +144,8 @@
     "blocks": ["product-summary.shelf#home"],
     "children": ["list-context-renderer#home"],
     "props": {
-      "category": "28/41/45",
+      // "category": "28/41/45",
+      "category": "20/27",
       "maxItems": 8
     }
   },
