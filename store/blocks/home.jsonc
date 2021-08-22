@@ -7,7 +7,7 @@
       "querySchema": {
         "skusFilter": "FIRST_AVAILABLE",
         "simulationBehavior": "skip",
-        "maxItemsPerPage": 10
+        "maxItemsPerPage": 8
       }
     },
     "blocks": [
@@ -59,10 +59,50 @@
   "product-summary.shelf#home": {
     "children": [
       "product-summary-name",
-      "product-summary-image",
-      "product-summary-price",
-      "product-summary-sku-selector",
-      "product-summary-buy-button"
+      "product-images#home",
+      "rich-text#pre-launch",
+      "rich-text#validation",
+      "flex-layout.row#price"
     ]
+  },
+  "product-images#home": {
+    "props": {
+      "aspectRatio": "1:1",
+      "displayThumbnailsArrows": true,
+      "thumbnailsOrientation": "horizontal"
+    }
+  },
+  "rich-text#pre-launch": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "PRÉ-LANÇAMENTO",
+      "blockClass": "launch-message"
+    }
+  },
+  "rich-text#validation": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "VALIDAÇÃO A PARTIR DE 10/08/2021",
+      "blockClass": "validation-message"
+    }
+  },
+  "flex-layout.row#price": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": ["product-price#home", "product-summary-buy-button#home"]
+  },
+  "product-price#home": {
+    "props": {
+      "showListPrice": false,
+      "blockClass": "price-text"
+    }
+  },
+  "product-summary-buy-button#home": {
+    "props": {
+      "blockClass": "summary-button-text"
+    }
   }
 }

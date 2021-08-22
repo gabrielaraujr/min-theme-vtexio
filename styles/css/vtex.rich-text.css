@@ -1,0 +1,13 @@
+.container--launch-message {
+  background-color: #59ff00;
+  color: #000;
+}
+
+.container--validation-message {
+  background-color: #000;
+  color: #59ff00;
+}
+
+.paragraph {
+  margin: 0;
+}

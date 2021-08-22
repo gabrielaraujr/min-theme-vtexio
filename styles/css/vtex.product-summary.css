@@ -4,10 +4,39 @@
 }
 
 .nameContainer {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .brandName {
   color: #fff;
+}
+
+.buyButtonContainer--summary-button-text :global(.vtex-button) {
+  border: 0;
+  background-color: #59ff00;
+  color: #000;
+  font-weight: 500;
+  transition: all 0.25s ease-in-out;
+}
+
+.buyButtonContainer--summary-button-text :global(.vtex-button):hover {
+  filter: brightness(0.7);
+}
+
+.buyButtonContainer--summary-button-text :global(.vtex-button__label) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.buyButtonText--summary-button-text {
+  text-indent: -9999px;
+  line-height: 0;
+}
+
+.buyButtonText--summary-button-text::after {
+  content: 'CARRINHO +';
+  text-indent: 0;
+  display: block;
+  line-height: initial;
 }

@@ -1,0 +1,11 @@
+.minicartIconContainer {
+  color: #fff;
+}
+
+.minicartContainer :global(.vtex-button) {
+  transition: all 0.25s ease-in-out;
+}
+
+.minicartContainer :global(.vtex-button):hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
