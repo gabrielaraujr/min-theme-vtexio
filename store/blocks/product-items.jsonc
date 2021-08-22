@@ -1,10 +1,6 @@
 {
   "store.custom#product-items": {
-    "blocks": [
-      "tab-layout#home",
-      "list-context.image-list#home",
-      "search-result-layout.customQuery#home"
-    ],
+    "blocks": ["tab-layout#home", "list-context.image-list#home"],
     "parent": { "header": "header#empty" }
   },
   // removing default header
@@ -20,46 +16,73 @@
 
   "tab-layout#home": {
     "props": {
-      "defaultActiveTabId": "corinthians"
-      // "blockClass": "home"
+      "defaultActiveTabId": "promocao",
+      "blockClass": "home"
     },
     "children": ["tab-list#home", "tab-content#home"]
   },
   "tab-list#home": {
+    "props": { "blockClass": "list-home" },
     "children": ["tab-list.item#promocao", "tab-list.item#corinthians"]
   },
   "tab-list.item#promocao": {
     "props": {
       "tabId": "promocao",
       "label": "Promoção",
+      "blockClass": "tab-item",
       "defaultActiveTab": true
     }
   },
   "tab-list.item#corinthians": {
     "props": {
       "tabId": "corinthians",
-      "label": "Corinthians"
+      "label": "Corinthians",
+      "blockClass": "tab-item"
     }
   },
+
   "tab-content#home": {
+    "props": { "blockClass": "tab-home" },
     "children": ["tab-content.item#promocao", "tab-content.item#corinthians"]
   },
   "tab-content.item#promocao": {
-    "children": ["newsletter"],
-    "props": {
-      "tabId": "promocao"
-    }
+    "children": ["list-context.product-list#promocao"],
+    "props": { "tabId": "promocao" }
   },
   "tab-content.item#corinthians": {
-    "children": [
-      // "shelf#home",
-      // "info-card#home",
-      // "rich-text#question",
-      // "rich-text#link",
-      "newsletter"
-    ],
+    "children": ["list-context.product-list#corinthians"],
+    "props": { "tabId": "corinthians" }
+  },
+
+  "list-context.product-list#promocao": {
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["list-context-renderer#promocao"],
     "props": {
-      "tabId": "corinthians"
+      "category": "20/24",
+      "maxItems": 8
+    }
+  },
+  "list-context-renderer#promocao": {
+    "props": {
+      "listElement": "div",
+      "itemElement": "div",
+      "blockClass": "list-style"
+    }
+  },
+
+  "list-context.product-list#corinthians": {
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["list-context-renderer#corinthians"],
+    "props": {
+      "category": "20/22",
+      "maxItems": 8
+    }
+  },
+  "list-context-renderer#corinthians": {
+    "props": {
+      "listElement": "div",
+      "itemElement": "div",
+      "blockClass": "list-style"
     }
   },
 
@@ -90,12 +113,16 @@
       "arrowSize": 16,
       "infinite": true,
       "fullWidth": false,
+      "autoPlay": {
+        "timeout": 4000,
+        "stopOnHover": true
+      },
       "blockClass": "carousel"
     }
   },
 
   // product summary items
-  "search-result-layout.customQuery#home": {
+  /*"search-result-layout.customQuery#corinthians": {
     "props": {
       "querySchema": {
         "skusFilter": "FIRST_AVAILABLE",
@@ -110,22 +137,17 @@
     ]
   },
   "search-result-layout.desktop#home": {
-    "children": [
-      // "flex-layout.row#searchbread",
-      // "flex-layout.row#searchtitle",
-      // "flex-layout.row#result",
-      "search-content#home"
-    ],
     "props": {
-      "preventRouteChange": true,
-      "pagination": "show-more",
-      "defaultGalleryLayout": "grid"
+      "preventRouteChange": true
+      // "pagination": "show-more",
+      // "defaultGalleryLayout": "grid"
     }
+    // "children": ["search-content#home"]
   },
-  "search-content#home": {
-    "blocks": ["gallery#home", "not-found"]
-  },
-  "gallery#home": {
+  // "search-content#home": {
+  //   "blocks": ["gallery#home", "not-found"]
+  // },
+  "gallery#corinthians": {
     "props": {
       "layouts": [
         {
@@ -147,7 +169,7 @@
       "ListSummary": "product-summary.shelf#home",
       "GridSummary": "product-summary.shelf#home"
     }
-  },
+  },*/
 
   // customization of product items
   "product-summary.shelf#home": {
