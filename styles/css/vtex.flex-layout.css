@@ -31,3 +31,19 @@
   justify-content: center;
   align-items: center;
 }
+
+.flexCol--product-right-col {
+  padding-right: 3rem;
+}
+
+.flexRow--prod-name :global(.vtex-store-components-3-x-productBrand) {
+  color: #fff;
+}
+
+.flexColChild--product-right-col :global(.vtex-button) {
+  background-color: #59ff00;
+  color: #000;
+  border: 0;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}

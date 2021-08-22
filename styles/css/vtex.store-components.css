@@ -132,3 +132,17 @@
   font-size: 1.3rem;
   color: rgb(20, 255, 0);
 }
+
+.carouselGaleryCursor {
+  margin: 0 auto;
+}
+
+/* .currencyContainer--prod-price {
+  margin: 2rem 0;
+} */
+
+.price_sellingPrice--prod-price {
+  margin-top: 0.5rem;
+  /* margin-top: 0rem; */
+  padding: 0;
+}
