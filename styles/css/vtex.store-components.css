@@ -100,7 +100,26 @@
   width: 15px;
 }
 
-.currencyContainer--price-text {
+.price_sellingPriceLabel--price-text {
+  display: none;
+}
+
+.price_listPriceContainer--price-text {
+  margin: 0;
+}
+
+.price_listPrice--price-text .currencyContainer--price-text {
+  color: #979899;
+  font-size: unset;
+  font-weight: 400;
+}
+
+/* .price_sellingPrice--price-text {
+  padding-top: 0.5rem;
+  margin-bottom: 2rem;
+} */
+
+.price_sellingPrice--price-text .currencyContainer--price-text {
   font-weight: 600;
   font-size: 1.3rem;
   color: rgb(20, 255, 0);

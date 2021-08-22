@@ -105,13 +105,15 @@
   },
   "flex-layout.row#price": {
     "props": {
-      "preventVerticalStretch": true
+      // "preventHorizontalStretch": true,
+      // "preventVerticalStretch": true,
+      "blockClass": "container-price"
     },
     "children": ["product-price#home", "product-summary-buy-button#home"]
   },
   "product-price#home": {
     "props": {
-      "showListPrice": false,
+      // "showListPrice": true,
       "blockClass": "price-text"
     }
   },
