@@ -1,7 +1,10 @@
 {
   "store.custom#product-items": {
-    "blocks": ["search-result-layout.customQuery#home"],
-    "parent": { "header": "header#empty" } // remove default header
+    "blocks": [
+      "list-context.image-list#home",
+      "search-result-layout.customQuery#home"
+    ],
+    "parent": { "header": "header#empty" }
   },
   // removing default header
   "header#empty": {
@@ -12,6 +15,38 @@
   },
   "header-layout.mobile#empty": {
     "children": []
+  },
+
+  // slider layout
+  "list-context.image-list#home": {
+    "props": {
+      "height": 320,
+      "images": [
+        {
+          "image": "https://i.imgur.com/QUDAmAY.gif"
+          // "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://i.imgur.com/15b4h0a.gif"
+          // "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ]
+    },
+    "children": ["slider-layout#home-images"]
+  },
+  "slider-layout#home-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "arrowSize": 18,
+      "infinite": true,
+      "fullWidth": false,
+      // "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
   },
 
   // product summary items

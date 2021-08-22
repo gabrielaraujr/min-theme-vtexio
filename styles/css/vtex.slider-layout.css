@@ -1,0 +1,10 @@
+.sliderLayoutContainer--carousel {
+  background-color: #303030;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+}
+
+.sliderTrackContainer--carousel {
+  max-width: 800px;
+  border-radius: 10px;
+}
