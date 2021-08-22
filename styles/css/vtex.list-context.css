@@ -1,11 +1,12 @@
 .list--list-style {
+  position: relative;
   max-width: 1100px;
-  margin: 0 auto;
+  bottom: 40px;
+  margin: 6rem auto 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   box-sizing: border-box;
-  margin-top: 6rem;
 }
 
 .item--list-style {

@@ -29,11 +29,18 @@
   padding: 0;
 }
 
-.logoContainer--logo-mobile {
+.logoContainer--logo {
   float: left;
   min-width: 0;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 900px) {
+  .logoContainer--logo {
+    padding-top: 1.25rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .searchBarContainer {

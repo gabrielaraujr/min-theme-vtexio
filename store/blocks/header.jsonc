@@ -45,8 +45,9 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://vtex.com/wp-content/themes/VTEXTheme/v2/images/base/vtex.svg",
-      "width": "80"
+      "url": "https://i.imgur.com/wRreF42.png",
+      "width": "120",
+      "blockClass": "logo"
     }
   },
 
@@ -79,9 +80,9 @@
     "props": {
       "title": "Logo mobile",
       "href": "/",
-      "url": "https://www.ciashop.com.br/images/logo.svg",
-      "width": "40",
-      "blockClass": "logo-mobile"
+      "url": "https://i.imgur.com/wRreF42.png",
+      "width": "90",
+      "blockClass": "logo"
     }
   },
   "search-bar": {

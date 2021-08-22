@@ -116,7 +116,7 @@
     "blocks": ["product-summary.shelf#home"],
     "children": ["list-context-renderer#home"],
     "props": {
-      "category": "20/24",
+      "category": "28/41",
       "maxItems": 8
     }
   },
@@ -124,7 +124,7 @@
     "blocks": ["product-summary.shelf#home"],
     "children": ["list-context-renderer#home"],
     "props": {
-      "category": "20/22",
+      "category": "28/41/42",
       "maxItems": 8
     }
   },
@@ -132,7 +132,7 @@
     "blocks": ["product-summary.shelf#home"],
     "children": ["list-context-renderer#home"],
     "props": {
-      "category": "20/23",
+      "category": "28/41/43",
       "maxItems": 8
     }
   },
@@ -140,7 +140,7 @@
     "blocks": ["product-summary.shelf#home"],
     "children": ["list-context-renderer#home"],
     "props": {
-      "category": "20/21",
+      "category": "28/41/44",
       "maxItems": 8
     }
   },
@@ -148,7 +148,7 @@
     "blocks": ["product-summary.shelf#home"],
     "children": ["list-context-renderer#home"],
     "props": {
-      "category": "20/27",
+      "category": "28/41/45",
       "maxItems": 8
     }
   },

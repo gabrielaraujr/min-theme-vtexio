@@ -8,3 +8,26 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+
+/* .flexRowContent--footer-row {
+  justify-content: center;
+  align-items: center;
+} */
+
+.flexRow--footer-row {
+  width: 100%;
+  position: fixed;
+  height: 56px;
+  z-index: 5;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #424242;
+}
+
+.flexCol--col-footer {
+  flex: 1;
+  padding: 6px 6px;
+  justify-content: center;
+  align-items: center;
+}
