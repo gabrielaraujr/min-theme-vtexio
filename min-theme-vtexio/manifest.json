@@ -52,7 +52,8 @@
     "vtex.store-image": "0.x",
     "vtex.list-context": "0.x",
     "vtex.checkout-summary": "0.x",
-    "vtex.product-list": "0.x"
+    "vtex.product-list": "0.x",
+    "hiringcoders2021.advanced-theme-vtexio": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

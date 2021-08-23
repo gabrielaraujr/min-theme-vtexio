@@ -1,6 +1,6 @@
 {
   "store.product": {
-    "children": ["breadcrumb", "flex-layout.row#product-main"]
+    "children": ["breadcrumb", "flex-layout.row#product-main", "customForm"]
   },
 
   "flex-layout.row#product-main": {
