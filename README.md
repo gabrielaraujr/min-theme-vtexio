@@ -1,15 +1,15 @@
-![UpMedal](https://i.imgur.com/7if7olR.jpg)
+![UpMedal](https://i.imgur.com/UWPHx7S.jpg)
 
 # UpMedal
 
 Desafio 03 do Hiring Coders: **Desenvolver o e-commerce da UpMedal**.
 
-# Resumo do projeto
+### Resumo do projeto
 
 
 Fazer o clone do e-commerce [UpMedal](https://www.upmedal.com/desafios) a partir do [bolier template padrão](https://github.com/vtex-apps/minimum-boilerplate-theme) da Vtex IO usando o próprio framework da empresa.
 
-# Entregáveis
+### Entregáveis
 
 
 - [x]  Usar boiler template padrão da Vtex IO
@@ -27,14 +27,14 @@ Fazer o clone do e-commerce [UpMedal](https://www.upmedal.com/desafios) a partir
 
 Fonte: [PDF do Desafio](https://drive.google.com/file/d/1KVNKIOWI0s8m4zMkUPtjj7gsBlgjlqad/view)
 
-# Passos para execução do projeto
+### Passos para execução do projeto
 
 
 Acesse a [configuração padrão](https://learn.vtex.com/page/configurando-seu-ambiente) do VTEX IO e siga todos os passos.
 
-Após a configuração padrão entre na pasta **store-block-template** no seu terminal e rode o comando **`yarn`**, faça o mesmo para as pastas **node** e **react**. Agora, para rodar o projeto é necessário rodar o comando **`vtex link`** dentro de ****cada pasta do principal do projeto, ou seja, **min-theme-vtexio** e na **store-block-template**.
+Após a configuração padrão entre na pasta **store-block-template** no seu terminal e rode o comando **`yarn`**, faça o mesmo para as pastas **node** e **react**. Agora, para rodar o projeto é necessário rodar o comando **`vtex link`** dentro de cada pasta do principal do projeto, ou seja, **min-theme-vtexio** e na **store-block-template**.
 
-# Imagens do projeto
+### Imagens do projeto
 
 
 Home (Slider Layout, Tab Layout e Product List)
