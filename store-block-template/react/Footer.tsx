@@ -9,7 +9,7 @@ const Footer: StorefrontFunctionComponent = () => {
 
   return (
     <div
-      className={`${handles.footerContainer} w-100 bg-muted-1 flex items-center justify-center fixed h3 bottom-0`}
+      className={`${handles.footerContainer} w-100 bg-muted-1 flex items-center justify-center fixed z-999 h3 bottom-0`}
     >
       <button
         className={`${handles.btn} hover-c-on-action-secondary w4 flex flex-column items-center pointer bg-transparent pv2 ph3 b--none outline-0 no-underline white`}
