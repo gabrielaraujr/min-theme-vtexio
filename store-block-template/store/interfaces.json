@@ -1,0 +1,8 @@
+{
+  "customFooter": {
+    "component": "Footer"
+  },
+  "customForm": {
+    "component": "Form"
+  }
+}
