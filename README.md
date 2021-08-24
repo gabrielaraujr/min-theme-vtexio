@@ -38,7 +38,7 @@ Após a configuração padrão entre na pasta **store-block-template** no seu te
 
 
 Home (Slider Layout, Tab Layout e Product List)
-![Home](https://i.imgur.com/6d7VKRu.jpg)
+![Home](https://i.imgur.com/JrNM1GY.jpg)
 
 
 Produtos e Footer (Mostrando o link do whatsapp)
